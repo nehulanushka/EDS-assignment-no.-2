@@ -39,3 +39,48 @@ Qno.1.1.5
 n=int(input())
 for i in range(1,11):
 	print(f"{n} x {i} = {n*i}")
+
+Qno.1.2.1
+n = int(input())
+marks = list(map(int, input().split()))
+
+# Check if any subject is failed
+if any(m < 40 for m in marks):
+    print("Fail")
+else:
+    aggregate = sum(marks) / n
+    print(f"Aggregate Percentage: {aggregate:.2f}")
+    
+    if aggregate > 75:
+        print("Grade: Distinction")
+    elif aggregate >= 60:
+        print("Grade: First Division")
+    elif aggregate >= 50:
+        print("Grade: Second Division")
+    elif aggregate >= 40:
+        print("Grade: Third Division")
+
+Qno.1.2.2
+def fibonacci(n):
+	if n==1:
+		return 0
+	elif n==2:
+		return 1
+	else:
+		return fibonacci(n-1) + fibonacci(n-2)
+n = int(input())
+for i in range(1, n + 1):
+	print(fibonacci(i), end=" ")
+
+Qno.1.2.3
+n=int(input())
+for i in range(1,n+1):
+	print('* '*i)
+
+Qno.1.2.4
+n=int(input())
+for i in range(1,n+1):
+	for j in range(1,i+1):
+		print(j ,end=' ')
+	print()
+
